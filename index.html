@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
-  <title>Bible Quizzing (1)</title>
+  <title>Bible Quizzing</title>
   <style>
     body {
       color: #ffffff;
@@ -132,13 +132,13 @@
       cursor: auto;
     }
     .sc-monitor-root[data-opcode^="data_"] .sc-monitor-value-color {
-      background-color: #1a88ff;
+      background-color: #d1d10f;
     }
     .sc-monitor-row-value-outer {
-      background-color: #fc662c;
+      background-color: #2c67ff;
     }
     .sc-monitor-row-value-editing .sc-monitor-row-value-outer {
-      background-color: #e25b27;
+      background-color: #275ce5;
     }
     
   </style>
@@ -224,7 +224,7 @@
       scaffolding.setAccentColor("#ff4c4c");
 
       try {
-        scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@Bible Quizzing (1).sb3"));
+        scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@Bible Quizzing.sb3"));
       } catch (error) {
         console.error(error);
       }
